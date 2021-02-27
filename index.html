@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vários estilos de CSS</title>
+
+    <!------------------------- Estilo 1 ------------------------------------>
+
+    <style>
+
+        .container{
+
+            min-width: 900px;
+
+        }
+
+        .wrapper {
+
+            position: relative;
+            overflow: auto;
+
+        }
+
+        body{
+
+            font: 100% Lucida Sans, Verdana;
+            margin: 20px;
+            line-height: 26px;
+
+        }
+
+        #top{
+
+            background-color: #4CAF50;
+            color: #ffffff;
+            padding: 15px;
+
+        }
+
+        .menuItem{
+
+            background-color: #f1f1f1;
+            border: 1px solid #d4d4d4;
+            list-style-type: none;
+            padding: 2px;
+            cursor: pointer;
+
+        }
+
+        .menuItem:hover{
+
+            background-color: #ffffff;
+
+        }
+
+        .menuItem:first-child{
+
+            background-color: #4CAF50;
+            color: #ffffff;
+            font-weight: bold;
+
+        }
+
+        #menuBar{
+
+            width: 210px;
+            float: left;
+
+        }
+
+        #main{
+
+            padding: 10px;
+            margin: 0 210px;
+
+        }
+
+        #sideBar{
+
+            background-color: #32a4e7;
+            color: #ffffff;
+            padding: 10px;
+            width: 180px;
+            bottom: 0;
+            top: 0;
+            right: 0;
+            position: absolute;
+            border-radius: 4px;
+
+        }
+
+
+        #bottom{
+
+            border: 1px solid #d4d4d4;
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 10px;
+            font-size: 70%;
+            line-height: 14px;
+
+        }
+
+        #top h1, #top p, #menuList {
+
+            margin: 0;
+            padding: 0;
+
+        }
+
+        #top, #sideBar, #bottom, .menuItem {
+
+            border-radius: 4px;
+            margin: 4px;
+
+        }
+
+        a {
+
+            color: #000000;
+            text-decoration: underline;
+
+        }
+
+        a:hover {
+
+            text-decoration: none;
+
+        }
+
+
+        @media (max-width: 800px) {
+
+            #sideBar{
+
+                width: auto;
+                position: relative;
+
+            } 
+
+            #main {
+
+                margin-right: 0;
+
+            }    
+       
+        }
+
+        @media (max-width: 600px) {
+        
+            #menuBar {
+            
+                width: auto;
+                float: none;
+        
+            }
+        
+            #main {
+
+                margin: 0;
+
+            }   
+
+        }
+
+    </style>
+
+   <!------------------------- Estilo 2 ------------------------------------>
+
+    <style>
+
+        body {
+
+            font-family: Arial;
+            background-color: #d14836;
+            line-height: 20px;
+
+        }
+
+        .container {
+
+            min-width: 900px;
+
+        }
+
+        .wrapper {
+
+            position: relative;
+            overflow: auto;
+
+        }
+
+        #top {
+
+            color: #ffffff;
+            padding: 15px;
+            font-size: 30px;
+            line-height: 26px; 
+
+        }
+
+        #top h1 {  
+
+            margin:0;
+            line-height: 50px;
+
+        }
+
+        #menuBar {
+
+            width: 190px;
+            float: right;
+
+        }
+
+        #main {
+
+            padding: 10px;
+            background-color: #ffffff;
+            font: 80% Verdana;
+
+        }
+
+        #main h1, #main h2 {
+
+            color: #d14836;
+
+        }
+
+        #sideBar {
+
+            background-color: #F6DAD7;
+            color: #d14836;
+            padding: 10px;
+
+        }
+
+        #bottom {
+
+            text-align: center;
+            padding: 10px;
+            font-size: 70%;
+            color: #ffffff;
+
+        }
+
+        #menuList {
+
+            padding:0;
+            font: 16px verdana;
+
+        }
+
+        .menuItem {
+
+            width: 155px;
+            background-color: #d14836;
+            border: 1px solid #d14836;
+            border-radius: 40px;
+            color: #ffffff;
+            list-style-type: none;
+            margin: 10px;
+            padding: 5px;
+            text-align: center;
+            cursor: pointer;
+
+        }
+
+        .menuiIem:nth-child(2) {
+
+            background-color:white;
+            color: #d14836;
+            font-weight:bold;
+
+        }
+
+        .menuItem:hover {
+
+            background-color: #ffffff;
+            color: #d14836;
+
+        }
+
+        a{     
+
+            color: #d14836;
+            text-decoration: none;
+
+        }
+
+        a:hover{
+
+            text-decoration: underline;
+
+        }
+
+    </style>
+
+    <!------------------------- Estilo 3 ------------------------------------>
+
+    <style>
+
+        body {
+
+            font: 100% Verdana;
+            margin: 20px;
+            line-height: 26px;
+
+        }
+
+        .container{
+
+            min-width: 900px;
+
+        }
+
+        .wrapper {
+
+            position: relative;
+            overflow: auto;
+
+        }
+
+        #sideBar{
+
+            background-color: #f1f1f1;
+            border: 1px solid #d4d4d4;
+            padding-left: 10px;
+
+        }
+
+        #bottom{
+
+            text-align: center;
+            padding: 10px;
+            font-size: 70%;
+            line-height: 14px;
+
+        }
+
+        h1, h2, h3{
+
+            color: #4CAF50;
+
+        }
+
+        #main{
+
+            margin-top: 10rem;
+        }
+
+        #menulist{
+            
+            padding: 0;
+            position: relative;
+            overflow: auto;
+
+        }
+
+        .menuItem{
+
+            width: 190px;
+            float: left;
+            background-color: #555555;
+            color: #ffffff;
+            list-style-type: none;
+            margin: 4px;
+            padding: 2px;
+            text-align: center;
+            cursor: pointer;
+
+        }
+
+        .menuItem:nth-child(3){
+
+            background-color:#4CAF50;
+
+        }
+
+        .menuItem:hover {
+
+            background-color: #999999;
+
+        }
+
+        a{
+
+            color: #000000;
+
+        }
+
+        a:hover{
+
+            color: #84c754;
+
+        }
+
+    </style>
+
+    <!------------------------- Estilo 4 ------------------------------------>
+
+    <style>
+
+        body{
+
+            font: 100% Courier New;
+            margin: 20px;
+            line-height: 26px;
+            background-color: #000000;
+
+        }
+
+        .container{
+
+            min-width: 900px;
+
+        }
+
+        .wrapper{
+
+            position: relative;
+            overflow: auto;
+
+        }
+
+        #top{
+
+            color: #84c754;
+            padding: 15px;
+
+        }
+
+        #main{
+
+            padding: 10px;
+            color: #84c754;
+
+        }
+
+        #sideBar{
+
+            color: #ffffff;
+            border: 1px solid #ffffff;
+            border-radius: 4px;
+            padding: 10px;
+            width: 320px;
+            top: 0;
+            right: 0;
+            position: absolute;
+            font-size: 80%;
+            line-height: 20px;
+        
+        }
+
+        #bottom{
+
+            border: 1px solid #ffffff;
+            border-radius: 4px;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            font-size: 70%;
+            line-height: 14px;
+        
+        }
+
+        #top h1,#top p{
+
+            margin: 0;
+        
+        }
+
+        .menuItem{
+
+            color: #84c754;
+            cursor: pointer;
+        
+        }
+
+        .menuItem:nth-child(4){
+
+            color:white;
+            font-weight:bold;
+
+        }
+
+        .menuItem:hover{
+
+            color: #ffffff;
+
+        }
+
+        a{
+
+            color: #ffffff;
+        
+        }
+
+        a:hover{
+
+            color: #84c754;
+        
+        }
+        
+        @media (max-width: 600px) {
+        
+            #sideBar {
+                
+                width: auto;
+                margin-bottom:10px;        
+                position: relative;
+            
+            }
+
+        }
+
+    </style>
+
+    <!----------------------- Estilo pessoal --------------------------------->
+
+    <style>
+
+        body{
+
+            font: 100% Helvetica;
+            margin: 20px;
+            line-height: 26px;
+            background-color: #f0f2f5;
+
+        }
+
+        .container{
+
+            min-width: 900px;
+
+        }
+
+        .wrapper{
+
+            position: relative;
+            overflow: auto;
+
+        }
+
+        #top{
+
+            background-color: rgb(49, 40, 40);
+            color: #074e6e;
+            padding: 15px;
+
+        }
+
+        #main{
+
+            padding: 10px;
+            color: rgb(27, 70, 85);
+
+        }
+
+        #sideBar{
+
+            color: #ffffff;
+            border: 1px solid #ffffff;
+            border-radius: 4px;
+            padding: 10px;
+            width: 40%;
+            height: 27%;
+            top: 1rem;
+            right: 0;
+            position: absolute;
+            font-size: 80%;
+            line-height: 20px;
+            background-color: rgb(6, 73, 59);
+
+        }
+
+        #bottom{
+
+            border: 1px solid #ffffff;
+            border-radius: 4px;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            font-size: 70%;
+            line-height: 14px;
+            background-color: cornflowerblue;
+
+        }
+
+        #top h1,#top p{
+
+            margin: 0;
+
+        }
+
+        #menuList{
+
+            background-color: rgb(6, 73, 59);
+            width: 40%;
+            border-radius: 4px;
+
+        }
+
+        .menuItem{
+
+            width: 180px;
+            color: #84c754;
+            cursor: pointer;
+            list-style-type: none;
+
+
+        }
+
+        .menuItem:nth-child(5){
+
+            color:rgb(88, 33, 33);
+            font-weight:bold;
+
+        }
+
+        .menuItem:hover{
+
+            color: #ffffff;
+
+        }
+
+        a{
+
+            color: #3a114d;
+
+        }
+
+        a:hover{
+
+            color: #84c754;
+
+        }
+
+        @media (max-width: 600px) {
+
+            #sideBar {
+                
+                width: auto;
+                margin-bottom:10px;        
+                position: relative;
+
+            }
+
+        }
+
+    </style>
+
+
+    <script>
+
+        function semEstilo(){
+
+            document.styleSheets[0].disabled = true;
+            document.styleSheets[1].disabled = true;
+            document.styleSheets[2].disabled = true;
+            document.styleSheets[3].disabled = true;
+            document.styleSheets[4].disabled = true;
+
+        }
+
+        function mudarEstilo(n){
+
+            semEstilo();
+            document.styleSheets[n].disabled = false;
+
+        }
+
+        mudarEstilo(0);
+
+    </script>
+
+</head>
+
+<body>
+
+    <div class="containerWrapper">
+
+        <div id="top">
+
+            <h1>Bem vindo à minha página inicial</h1>
+    
+            <p>Utilize o menu para selecionar diferentes estilos</p>
+    
+        </div>
+        
+        <div class="wrapper">
+    
+            <div id="menuBar">
+    
+                <ul id="menuList">
+        
+                    <li class="menuItem" onclick="mudarEstilo(0)">Folha de estilo 1</li>
+                    <li class="menuItem" onclick="mudarEstilo(1)">Folha de estilo 2</li>
+                    <li class="menuItem" onclick="mudarEstilo(2)">Folha de estilo 3</li>
+                    <li class="menuItem" onclick="mudarEstilo(3)">Folha de estilo 4</li>
+                    <li class="menuItem" onclick="mudarEstilo(4)">Folha de estilo pessoal</li>
+                    <li class="menuItem" onclick="semEstilo()">Sem estilo</li>
+        
+                </ul>
+        
+            </div>
+        
+            <div id="main">
+        
+                <h1>Uma página e vários estilos diferentes</h1>
+        
+                <p>Esta é uma demonstração de como diferentes folhas de estilo podem alterar o layout de sua página HTML. Você pode alterar o layout desta página selecionando diferentes folhas de estilo no menu ou selecionando um dos seguintes links:</p>
+        
+                <a href="#" onclick="mudarEstilo(0)">Folha de estilo 1</a>
+                <a href="#" onclick="mudarEstilo(1)">Folha de estilo 2</a>
+                <a href="#" onclick="mudarEstilo(2)">Folha de estilo 3</a>
+                <a href="#" onclick="mudarEstilo(3)">Folha de estilo 4</a>
+                <a href="#" onclick="mudarEstilo(4)">Folha de estilo pessoal</a>
+                <a href="#" onclick="semEstilo()">Sem estilo</a>
+        
+                <h2>Sem estilo</h2>
+        
+                <p>Esta página usa elementos DIV para agrupar diferentes seções da página HTML. Clique aqui para ver a aparência da página sem folha de estilo:</p>
+        
+                <a href="#" onclick="semEstilo()">Sem estilo</a>
+        
+            </div>
+        
+            <div id="sideBar">
+        
+                <h3>Barra lateral</h3>
+        
+                <p>Conteúdos de barras laterais podem fazer referências à conteúdos extras sobre a página ou até fazer <em>links</em> com outras páginas.</p>
+        
+            </div>    
+    
+        </div>
+    
+        
+        <div id="bottom">
+    
+            <p>Este é o rodapé da página. Normalmente um rodapé contém informações sobre o autor da seção de dados, direitos autorais ou links para documentos relacionados. </p>
+        
+        </div>
+
+    </div>
+
+</body>
+</html>
