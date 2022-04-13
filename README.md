@@ -1,4 +1,4 @@
-# Senai-Exercicio-06
+# Senai-Exercício-06
 
 Este exercício faz parte do estudo de Front-End no Senai - DF. Consiste em usar uma página padrão para exercícios do site www.w3schools.com.
 
